@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Landing page with contact information">
+        <title>
+            Noah Keppers
+        </title>
+
+        <link rel="icon" href="favicon.ico" sizes="any">
+        <link rel="apple-touch-icon" href="icon.png">
+
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <style>
+            :root {
+                --accent-color: #00749A;
+                --accent-fade: #5b98b6;
+            }
+
+            body {
+                max-width: 90%;
+                padding-top: 2rem;
+                margin: 0 auto;
+            }
+
+            main.card {
+                    
+            }
+
+            .headshot {
+                display: flex;
+                img {
+                    max-width: 500px;
+                    margin: auto;
+                    border-radius: var(--pico-border-radius);
+                }
+            }
+
+            .col {
+                padding: 3rem;
+            }
+
+            @media (min-width: 900px) {
+                main.card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            h1 {
+                --pico-color: var(--accent-color);
+
+                border-bottom: 1px solid var(--accent-color);
+                box-shadow: 0 8px 6px -6px var(--accent-fade);
+
+                padding-bottom: 0.75rem;
+                margin-bottom: 2rem;
+            }
+
+            a {
+                --pico-color: var(--accent-color);
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+
+                padding: 0;
+                margin-top: 1.5rem;
+
+                li {
+                    list-style: none;
+                }
+
+                .separator {
+                    font-size: 1.5rem;
+                    padding: 0 0.25rem;
+                }
+
+                img {
+                    fill: var(--accent-color);
+                    width: 45px;
+                    padding: 0 0.3rem;
+                }
+
+                a:hover {
+                    filter: saturate(0.5);
+                }
+
+                .resume {
+                    display: flex;
+                    margin-left: 1.25rem;
+                }
+            }
+        </style>    
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-02GES9HCV6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-02GES9HCV6');
+    </script>
+    <body>
+        <main class="card">
+            <div class="headshot">
+                <img src="headshot.jpeg">
+            </div>
+            <div class="col">
+                <h1>Hi, I'm Noah!</h1>
+                <p>I'm currently a UX Researcher at <a href="https://www.oclc.org">OCLC</a>, using data analytics and user feedback to build better library tools.</p>
+                <p>My approach to my work is equal parts creative and technical, drawing from training in both Computer Science and Design.</p>
+                <p>Outside of work, I love learning new things. Right now I’m exploring:</p>
+                <ul>
+                    <li>Data Engineering for voter outreach (with <a href="https://www.fieldteam6.org/">Field Team 6</a>)</li>
+                    <li>Working on knitting projects (currently, the <a href="https://www.ravelry.com/patterns/library/tarot-card-sweater">Tarot Sweater</a>)</li>
+                    <li>Baking sourdough with my starter, Patricia</li>
+                </ul>
+                <p>
+                    Want to know more? Let’s chat.
+                </p>
+                <div>
+                        <ul class="social-links">
+                            <li><a href="mailto:me@noahkeppers.com" target="_blank" aria-label="Email Me" class="social-link"><img src="svg/icon-email.svg"></a></li>
+                            <li><a href="https://www.linkedin.com/in/noah-keppers/" target="_blank" aria-label="LinkedIn Profile" class="social-link"><img src="svg/icon-linkedin.svg"></a></li>
+                            <li><a href="https://www.github.com/noahkeppers/" target="_blank" aria-label="Github Profile" class="social-link"><img src="svg/icon-github.svg"></a></li>
+                            <li><a href="" target="_blank" class="social-link resume"><img src="svg/icon-resume.svg">Resume</a></li>
+                        </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
